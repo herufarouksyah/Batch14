@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="./utility.js"></script>
+    
+</head>
+<body>
+   
+    <script type="text/javascript">
+        var n =9;
+        var vGenap =  (n-1)*2;
+        var vGanjil = 1;
+        var variab = {
+                nilai:  9,
+                Genap:  0,
+                Ganjil:  1
+        };
+        variab.Genap = (variab.nilai-1)*2;
+        for (var i = 0; i < variab.nilai; i++) {
+            for (var j = 0; j < variab.nilai; j++) {
+
+                if (i==j ) {
+                    document.write(variab.Ganjil + '&emsp;');
+                } else if ((i + j == variab.nilai - 1)) {
+                    document.write(variab.Genap + '&emsp;');
+                }else{
+                    document.write('&emsp;');
+                }
+            }
+            
+            variab.Genap -=2;
+            variab.Ganjil+=2;
+            document.write('<br />');    
+        }
+        document.write('<br />');
+        document.write(pertambahan(1,4));
+        document.write('<br />');
+        document.write(Anggota.umur);
+        document.write('<br />');
+        document.write(Anggota.umur * 5);
+    </script>
+
+</body>
+</html>
